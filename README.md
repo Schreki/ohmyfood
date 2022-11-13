@@ -58,27 +58,8 @@ Vous pouvez retrouver le [brief complet ici](https://s3-eu-west-1.amazonaws.com/
 - Validation W3C CSS : à passer, warning autorisés
 - Compatibilité : Dernières versions de Chrome, Firefox & Safari
 
-## Convention nommage commit 
-
-Gitmoji https://gitmoji.carloscuesta.me/
-
 ## Tester le projet
 
-Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : [ohmyfood.mathisbarre.com](https://ohmyfood.mathisbarre.com/)
+Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : [https://schreki.github.io/ohmyfood/](https://schreki.github.io/ohmyfood/)
 
-Sinon, clonez le projet
-```terminal
-git clone https://github.com/MathisBarre/MathisBarre_3_04112020.git
-```
-Installez les dépendances
-```terminal
-yarn install
-```
-Et lancez le serveur !
-```terminal
-yarn dev
-```
-Vous pouvez aussi build le projet pour la production : 
-```terminal
-yarn build
-```
+
