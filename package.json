@@ -1,0 +1,12 @@
+{
+  "name": "p3_gorius_adeline_1_code_112022",
+  "version": "1.0.0",
+  "description": "Oh My Food",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+ 
+  "author": "ade",
+  "license": "ISC"
+}
