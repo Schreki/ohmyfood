@@ -362,11 +362,15 @@ h1 {
 /*Carte restaurant*/
 .card__title {
   font-family: "Shrikhand", cursive;
-  max-width: 322px;
 }
 
 .fa-heart:before {
   margin-left: 20px;
+}
+@media screen and (max-width: 600px) {
+  .fa-heart:before {
+    margin-left: 185px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -386,11 +390,60 @@ h1 {
   position: relative;
   z-index: 1;
 }
+@keyframes heart__full__opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+    background-image: linear-gradient(100deg, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    opacity: 1;
+    background-image: linear-gradient(100deg, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes heart__empty__opacity1 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.card .heart {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+.card .heart__1 {
+  position: relative;
+}
+.card .heart__1:hover {
+  animation: heart__empty__opacity1 1s;
+}
+.card .heart__2 {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+  color: #FFF;
+}
+.card .heart__2:hover {
+  animation: heart__full__opacity 1s forwards;
+}
 .card .far {
   align-self: flex-end;
 }
 .card h2 {
   margin-bottom: 35px;
+  width: 100%;
 }
 
 .entrees {
@@ -453,6 +506,12 @@ h1 {
   justify-content: space-between;
   overflow: hidden;
 }
+@media screen and (min-width: 375px) and (max-width: 400px) {
+  .card__global__contenu {
+    min-width: 250px;
+    max-width: 315px;
+  }
+}
 @media screen and (min-width: 400px) and (max-width: 1024px) {
   .card__global__contenu {
     max-width: none;
@@ -464,6 +523,11 @@ h1 {
   border-radius: 0.75rem;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (min-width: 375px) and (max-width: 600px) {
+  .card__global__contenu__dish {
+    width: 400px;
+  }
 }
 .card__global__contenu__dish h3 {
   font-size: 16px;
@@ -504,7 +568,7 @@ h1 {
 }
 @media screen and (max-width: 405px) {
   .card__global__contenu:hover .header_menu {
-    max-width: 130px;
+    max-width: 300px;
   }
 }
 .card__global__contenu:hover .circle {
@@ -556,6 +620,11 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   text-overflow: ellipsis;
+}
+@media screen and (min-width: 375px) and (max-width: 600px) {
+  .header_menu {
+    width: 300px;
+  }
 }
 .header_menu h3 {
   text-overflow: ellipsis;
