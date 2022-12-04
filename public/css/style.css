@@ -325,7 +325,7 @@ h1 {
 .restaurants__card .restaurants__card__content .heart {
   position: absolute;
   right: 20px;
-  top: 1;
+  top: 15px;
 }
 .restaurants__card .restaurants__card__content .heart__1 {
   position: relative;
@@ -506,7 +506,7 @@ h1 {
   justify-content: space-between;
   overflow: hidden;
 }
-@media screen and (min-width: 375px) and (max-width: 400px) {
+@media screen and (min-width: 320px) and (max-width: 400px) {
   .card__global__contenu {
     min-width: 250px;
     max-width: 315px;
@@ -524,7 +524,7 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (min-width: 375px) and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 600px) {
   .card__global__contenu__dish {
     width: 400px;
   }
@@ -620,11 +620,6 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   text-overflow: ellipsis;
-}
-@media screen and (min-width: 375px) and (max-width: 600px) {
-  .header_menu {
-    width: 300px;
-  }
 }
 .header_menu h3 {
   text-overflow: ellipsis;
